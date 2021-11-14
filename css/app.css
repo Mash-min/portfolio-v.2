@@ -16,7 +16,7 @@ body {
 }
 .header {
     font-size: 50px;
-    font-family: 'Righteous Regular';
+    font-family: 'Manjari Regular';
     margin-bottom: 0px;
 }
 .minimalist {
@@ -28,6 +28,15 @@ body {
 .paragraph , .information{
     font-family: 'Lexend Deca';
     text-align: justify;
+}
+.project-title {
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Quicksand';
+  font-weight: 300;
+}
+.work-items, .information-items, .education-items {
+  font-family: 'Quicksand';
 }
 .personal-information-container {
     margin-top: 45px;
@@ -92,6 +101,22 @@ body {
     background-size: 100% 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
+  }
+  .work-items, .information-items, .education-items {
+    font-size: 14px!important;
+  }
+  .content {
+    padding: 1px!important;
+  }
+  .greetings {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.87);
+    border: 1px solid rgb(230, 230, 230);
+    margin: 15px 1px 15px 1px;
+    border-radius: 3px;
+  }
+  .greetings .btn {
+    width: 100%!important;
   }
 }
 /*// Small devices (landscape phones, 576px and up)*/
