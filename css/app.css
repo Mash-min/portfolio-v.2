@@ -45,7 +45,10 @@ body {
   width: 280px;
   height: 100%; 
   position: fixed; 
-  background-color: #1a151a!important
+  background-color: #121212!important
+}
+.project-image-container {
+  padding: 0px;
 }
 
 .owl-theme .owl-controls .owl-page {
@@ -85,11 +88,11 @@ body {
 /* MEDIA QUERIES */
 @media (max-width: 575px) { 
   .header {
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
   }
   .paragraph {
-    font-size: 14px;
+    font-size: 13px;
   }
   .minimalist {
     width: 60%!important;
@@ -105,18 +108,11 @@ body {
   .work-items, .information-items, .education-items {
     font-size: 14px!important;
   }
+  .skill-items li button {
+    font-size: 13px!important;
+  }
   .content {
     padding: 1px!important;
-  }
-  .greetings {
-    padding: 15px;
-    background-color: rgba(255, 255, 255, 0.87);
-    border: 1px solid rgb(230, 230, 230);
-    margin: 15px 1px 15px 1px;
-    border-radius: 3px;
-  }
-  .greetings .btn {
-    width: 100%!important;
   }
 }
 /*// Small devices (landscape phones, 576px and up)*/
