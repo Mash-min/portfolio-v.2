@@ -15,6 +15,17 @@
 </head>
 <body>
   
+  <nav class="fixed-top navbar navbar-dark bg-dark navbar-expand-lg navbar-light bg-light d-block d-lg-none d-sm-block d-xs-block">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-3" href="/">
+        <img src="/images/Logo 3.png" alt="" style="width: 25px">
+      </a>
+      <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
+        <i class="fa fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
   <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel" style="width: 280px;">
     <!-- Sidebar -->
     <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark my-sidebar">
@@ -58,82 +69,88 @@
     </div>
   </div>
 
-  <nav class="navbar navbar-expand-lg navbar-transparent">
-    <div class="container-fluid container">
-      <a class="navbar-brand" href="#">
-        <img src="images/Logo 3.png" alt="" width="30px">
-      </a>
-      <ul class="nav justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link " href="#">Blog</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
   <div class="row" style="height: 100%;">
-    <div class="col-md-12">
+    <div class="col-lg-3 d-none d-lg-block d-xxl-block" id="sideBar">
+      <!-- Sidebar -->
+      <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark my-sidebar">
+        <img src="images/Logo 3.png" alt="" style="width: 55%; align-self: center;" class="mb-3 mt-3">
+        <ul class="nav nav-pills flex-column mb-auto sidebar">
+          <li>
+            <a href="#personalInformation" class="nav-link text-white">
+              <i class="fa fa-chevron-right"></i> Personal information
+            </a>
+          </li>
+          <li>
+            <a href="#sampleProjects" class="nav-link text-white">
+              <i class="fa fa-chevron-right"></i> Sample Projects
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+              <i class="fa fa-chevron-right"></i> Visit my Blog
+            </a>
+          </li>
+        </ul>
+        <div class="d-flex">
+          <a href="#" class="btn btn-sm btn-outline-secondary ms-1">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="#" class="btn btn-sm btn-outline-secondary ms-1">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a href="#" class="btn btn-sm btn-outline-secondary ms-1">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a href="#" class="btn btn-sm btn-outline-secondary ms-1">
+            <i class="fa fa-github"></i>
+          </a>
+          <a href="#" class="btn btn-sm btn-outline-secondary ms-1">
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </div>
+        <hr>
+        <small class="text-muted" style="align-self: center;">Copyright @MashiyyatDelosSantos</small>
+      </div>
+    </div>
+    <div class="col-lg-9 col-md-12 p-3 mt-3 content">
       <!-- Header -->
-      <div class="header">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 offset-md-3 d-block d-lg-none d-sm-block d-xs-block" style="text-align: center;">
-              <div data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-out-back" data-aos-duration="2000">
-                <img src="images/minimalist.png" alt="" class="minimalist">
+      <div class="row mb-2 personal-information-container">
+        <div class="col-md-6 offset-md-3 d-block d-lg-none d-sm-block d-xs-block" style="text-align: center;">
+          <div data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-out-back" data-aos-duration="2000">
+            <img src="images/minimalist.png" alt="" class="minimalist">
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-out-back" data-aos-duration="2000">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="card-title header">Hi! I'm Mash</h5>
               </div>
-            </div>
-            <div class="col-lg-6 col-md-12 header-text mt-5">
-              <div data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-out-back" data-aos-duration="2000">
-                <h5 class="card-title">Hi! I'm Mash</h5>
-                <h4>Web Developer, Graphic Artist, Illustrator</h4>
-                <a class="btn btn-dark btn-sm mt-4 download-resume" href="Resume.pdf">Download my CV</a>
-                <div class="d-flex justify-content-center mt-3" data-aos="flip-down" data-aos-offset="100" data-aos-easing="ease-out-back" data-aos-duration="3000">
-                  <a href="#" class="btn btn-outline-dark ms-1">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                  <a href="#" class="btn btn-outline-dark ms-1">
-                    <i class="fa fa-instagram"></i>
-                  </a>
-                  <a href="#" class="btn btn-outline-dark ms-1">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                  <a href="#" class="btn btn-outline-dark ms-1">
-                    <i class="fa fa-github"></i>
-                  </a>
-                  <a href="#" class="btn btn-outline-dark ms-1">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </div>
+              <div class="card-body greetings">
+                <p class="card-text paragraph">
+                  Hello there my page visitor! 
+                  I'm Mashiyyat Delos Santos I'm a Web Developer, Illustrator, Graphics Artist and a Friend. 
+                  I create applications using web technologies 
+                  such as Laravel, VueJS and some other cool stuffs. 
+                  Go checkout my sample <a href="#sampleProjects">Projects</a> to see my outputs and case studies.
+                </p>
               </div>
-            </div>
-            <div class="col-lg-6 col-md-6 d-none d-lg-block d-xxl-block minimalist-container">
-              <div data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-out-back" data-aos-duration="2000">
-                <img src="images/minimalist.png" alt="" class="minimalist">
+              <div class="card-footer">
+                <a class="btn btn-sm btn-primary" href="Resume.pdf">Download my CV</a>
               </div>
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="greetings">
-        <div class="container" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-out-back" data-aos-duration="2000">
-          <div class="row mb-5">
-            <div class="col-md-6 offset-md-3">
-              <p class="message">
-                Hello there my page visitor! 
-                I'm Mashiyyat Delos Santos I'm a Web Developer, Illustrator, Graphics Artist and a Friend. 
-                I create web applications using technologies 
-                such as Laravel, VueJS and some other cool stuffs. 
-                Go checkout my sample <a href="#sampleProjects">Projects</a> to see my outputs and case studies.
-              </p>
-            </div>
+        <div class="col-md-6 d-none d-lg-block d-xxl-block">
+          <div data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-out-back" data-aos-duration="2000">
+            <img src="images/minimalist.png" alt="" style="width: 100%;">
           </div>
         </div>
       </div>
       <!-- Personal Information -->
-      <div class="container" id="personalInformation">
+      <div id="personalInformation" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-out-back" data-aos-duration="2000">
         <div class="row mb-3">
-          <div class="col-md-6 p-1" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-out-back" data-aos-duration="2000">
+          <div class="col-lg-12 p-1">
             <ul class="list-group information-items">
               <li class="list-group-item text-dark bg-light">
                 <i class="fa fa-user"></i><small> Personal Information</small>
@@ -155,7 +172,12 @@
               </li>
             </ul>
           </div>
-          <div class="col-md-6 p-1" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-out-back" data-aos-duration="2000">
+        </div>
+      </div>
+      <!-- Skills -->
+      <div id="skills" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-out-back" data-aos-duration="2000">
+        <div class="row mb-3 skills-container">
+          <div class="col-md-12 p-1">
             <ul class="list-group skill-items">
               <li class="list-group-item text-dark bg-light">
                 <i class="fa fa-lightbulb-o"></i> <small > Skills & Knowledge</small>
@@ -188,9 +210,8 @@
           </div>
         </div>
       </div>
-
       <!-- Work and Education -->
-      <div class="container" id="workAndEducation" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-out-back" data-aos-duration="1000">
+      <div id="workAndEducation" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-out-back" data-aos-duration="1000">
         <div class="row mb-3">
           <div class="col-lg-6 col-md-12 p-1">
             <ul class="list-group education-items">
@@ -234,39 +255,37 @@
           </div>
         </div>
       </div>
-      
       <!-- Sample Projects -->
-      <div class="container" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-out-back" data-aos-duration="1000">
-        <div class="row sample-projects-container mb-3" id="sampleProjects">
-            <div class="col-lg-12">
-              <ul class="list-group">
-                <li class="list-group-item text-dark bg-light">
-                  <i class="fa fa-folder-open"></i> <small>Sample Projects</small>
-                </li>
-                <li class="list-group-item">
-                  <div class="owl-carousel owl-theme">
-                    <div class="item">
-                      <ul class="list-group project-items">
-                        <li class="list-group-item project-title">
-                          <span>Sample Project</span>
-                        </li>
-                        <li class="list-group-item project-image-container">
-                          <img src="images/projects/1.JPG" alt="">
-                        </li>
-                        <li class="list-group-item">
-                          <div class="d-grid">
-                            <button class="btn btn-sm btn-outline-dark">View project</button>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
+      <div class="row sample-projects-container mb-5" id="sampleProjects">
+        <div data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-out-back" data-aos-duration="1000">
+          <div class="col-lg-12">
+            <ul class="list-group">
+              <li class="list-group-item text-dark bg-light">
+                <i class="fa fa-folder-open"></i> <small>Sample Projects</small>
+              </li>
+              <li class="list-group-item">
+                <div class="owl-carousel owl-theme">
+                  <div class="item" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-out-back" data-aos-duration="1000">
+                    <ul class="list-group project-items">
+                      <li class="list-group-item project-title">
+                        <span>Sample Project</span>
+                      </li>
+                      <li class="list-group-item project-image-container">
+                        <img src="images/projects/1.JPG" alt="">
+                      </li>
+                      <li class="list-group-item">
+                        <div class="d-grid">
+                          <button class="btn btn-sm btn-outline-dark">View project</button>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
-                </li>
-              </ul>
-            </div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-
     </div>
   </div>
 

@@ -2,11 +2,31 @@ body {
     height: 100%;
     content: '';
     width: 100%;
-    background: url(../images/svg1.svg);
     background-size: 100% 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Regular.ttf');
+}
+@font-face {
+  font-family: 'Fredoka';
+  src: url('../fonts/FredokaOne-Regular.ttf');
+}
+@font-face {
+  font-family: 'Lexend';
+  src: url('../fonts/LexendDeca-Regular.ttf');
+}
+@font-face {
+  font-family: 'Manjari';
+  src: url('../fonts/Manjari-Thin.ttf');
+}
+@font-face {
+  font-family: 'Sen';
+  src: url('../fonts/Sen-Bold.ttf');
+}
+
 .row {
     --bs-gutter-x: 0!important;
 }
@@ -14,13 +34,64 @@ body {
     font-family: 'Manjari Regular';
     color: white;
 }
+.navbar-transparent {
+  padding:25px 0px 20px 0px;
+  position: absolute;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0)!important;
+}
+.navbar-transparent .nav-item a {
+  color: white;
+  border: 1px solid rgba(31, 31, 31, 0);
+  border-radius: 30px;
+  transition: .4s;
+}
+.navbar-transparent .nav-item a:hover {
+  background-color: rgb(37, 14, 34);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(31, 31, 31);
+}
 .header {
-    font-size: 50px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-bottom: 0px;
+  background: url(../images/svg/svg1.svg);
+  height: 590px;
+  padding-top: 90px;
+  margin-bottom: 20px;
+}
+.header h5{
+  color:rgb(28 17 17);
+  font-size: 70px;
+  font-family: 'Sen';
+  margin-bottom: 0px;
+}
+.header h4 {
+  color:rgb(28 17 17);
+  font-size: 20px;
+  font-family: 'Poppins';
+  margin-bottom: 0px;
+}
+.header .message , .header .message a {
+  color: white;
+  font-size: 18px;
+  font-family: 'Quicksand';
+}
+.download-resume {
+  border-radius: 30px;
+}
+
+.header-text {
+  text-align: center;
+}
+.minimalist-container {
+  text-align: center;
 }
 .minimalist {
-  width: 80%;
+  width: 75%;
+}
+.greetings .message {
+  text-align: justify;
+  font-size: 18px;
+  font-family: 'Lexend';
+  color: #4d4d4d;
 }
 .title {
   font-family: 'Alata Regular'!important;
@@ -91,19 +162,25 @@ body {
     font-size: 30px;
     text-align: center;
   }
-  .paragraph {
-    font-size: 13px;
-  }
   .minimalist {
-    width: 60%!important;
+    width: 50%!important;
   }
-  body {
-    content: '';
-    width: 100%;
-    background: url(../images/svg4.svg);
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+  .header {
+    background: url(../images/svg/svg4.svg);
+    margin-bottom: 5px!important;
+  }
+  .header h5{
+    font-size: 35px;
+  }
+  .header h4 {
+    font-size: 15px;
+  }
+  .header-text {
+    margin-top: 0px!important;
+  }
+  .greetings .message {
+    font-size: 14px;
+    padding: 20px;
   }
   .work-items, .information-items, .education-items {
     font-size: 14px!important;
@@ -121,10 +198,19 @@ body {
     font-size: 40px;
     text-align: center;
   }
+  .minimalist {
+    width: 40%!important;
+  }
+  .header h5{
+    font-size: 40px;
+  }
+  .header h4 {
+    font-size: 15px;
+  }
   body {
     content: '';
     width: 100%;
-    background: url(../images/svg3.svg);
+    /* background: url(../images/svg3.svg); */
     background-size: 100% 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -136,10 +222,19 @@ body {
     font-size: 40px;
     text-align: center;
   }
+  .minimalist {
+    width: 40%!important;
+  }
+  .header h5{
+    font-size: 45px;
+  }
+  .header h4 {
+    font-size: 15px;
+  }
   body {
     content: '';
     width: 100%;
-    background: url(../images/svg2.svg);
+    /* background: url(../images/svg2.svg); */
     background-size: 100% 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
