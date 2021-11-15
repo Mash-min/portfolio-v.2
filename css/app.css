@@ -74,10 +74,6 @@ body {
   font-size: 18px;
   font-family: 'Quicksand';
 }
-.download-resume {
-  border-radius: 30px;
-}
-
 .header-text {
   text-align: center;
 }
@@ -85,7 +81,13 @@ body {
   text-align: center;
 }
 .minimalist {
-  width: 75%;
+  width: 60%;
+}
+.greetings {
+  text-align: center;
+}
+.greetings img {
+  width: 200px;
 }
 .greetings .message {
   text-align: justify;
