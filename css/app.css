@@ -87,7 +87,7 @@ body {
   text-align: center;
 }
 .greetings img {
-  width: 200px;
+  width: 40%;
 }
 .greetings .message {
   text-align: justify;
@@ -123,7 +123,9 @@ body {
 .project-image-container {
   padding: 0px;
 }
-
+footer {
+  text-align: center;
+}
 .owl-theme .owl-controls .owl-page {
   display: inline-block;
 }
