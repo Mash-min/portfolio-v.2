@@ -90,10 +90,16 @@ body {
   width: 40%;
 }
 .greetings .message {
-  text-align: justify;
-  font-size: 18px;
+  text-align: center;
+  font-size: 13px;
   font-family: 'Lexend';
   color: #4d4d4d;
+}
+.greetings .card-body {
+  padding: 0px!important;
+}
+.greetings .card-title {
+  margin-top: 15px!important;
 }
 .title {
   font-family: 'Alata Regular'!important;
@@ -183,8 +189,11 @@ footer {
     margin-top: 0px!important;
   }
   .greetings .message {
-    font-size: 14px;
-    padding: 20px;
+    font-size: 13px;
+    padding: 10px;
+  }
+  .greetings .card-footer {
+    padding: 0px;
   }
   .work-items, .information-items, .education-items {
     font-size: 14px!important;
