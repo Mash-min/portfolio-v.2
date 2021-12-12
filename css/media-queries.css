@@ -1,7 +1,7 @@
 /* MEDIA QUERIES */
 @media (max-width: 575px) { 
-  .header {
-    font-size: 30px;
+  .header h5{
+    font-size: 20px!important;
     text-align: center;
   }
   .minimalist {
