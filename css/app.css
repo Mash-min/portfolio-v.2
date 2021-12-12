@@ -1,3 +1,10 @@
+@import url('sidebars.css');
+@import url('owl.carousel.css');
+@import url('owl.theme.default.min.css');
+@import url('aos.css');
+@import url('media-queries.css');
+@import url('font-face.css');
+
 body {
     height: 100%;
     content: '';
@@ -5,26 +12,6 @@ body {
     background-size: 100% 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
-}
-@font-face {
-  font-family: 'Poppins';
-  src: url('../fonts/Poppins-Regular.ttf');
-}
-@font-face {
-  font-family: 'Fredoka';
-  src: url('../fonts/FredokaOne-Regular.ttf');
-}
-@font-face {
-  font-family: 'Lexend';
-  src: url('../fonts/LexendDeca-Regular.ttf');
-}
-@font-face {
-  font-family: 'Manjari';
-  src: url('../fonts/Manjari-Thin.ttf');
-}
-@font-face {
-  font-family: 'Sen';
-  src: url('../fonts/Sen-Bold.ttf');
 }
 
 .row {
@@ -129,6 +116,20 @@ body {
 .project-image-container {
   padding: 0px;
 }
+.project-title {
+  font-family: 'Sen';
+  font-size: 20px;
+}
+.project-description {
+  font-size: 13px;
+  text-align: center;
+  font-family: 'Lexend';
+}
+.project-stack button{
+  font-size: 12px!important;
+  font-family: 'Lexend';
+}
+
 footer {
   text-align: center;
 }
@@ -166,104 +167,3 @@ footer {
   background-color: #363636;
 }
 
-/* MEDIA QUERIES */
-@media (max-width: 575px) { 
-  .header {
-    font-size: 30px;
-    text-align: center;
-  }
-  .minimalist {
-    width: 50%!important;
-  }
-  .header {
-    background: url(../images/svg/svg4.svg);
-    margin-bottom: 5px!important;
-  }
-  .header h5{
-    font-size: 35px;
-  }
-  .header h4 {
-    font-size: 15px;
-  }
-  .header-text {
-    margin-top: 0px!important;
-  }
-  .greetings .message {
-    font-size: 13px;
-    padding: 10px;
-  }
-  .greetings .card-footer {
-    padding: 0px;
-  }
-  .work-items, .information-items, .education-items {
-    font-size: 14px!important;
-  }
-  .skill-items li button {
-    font-size: 13px!important;
-  }
-  .content {
-    padding: 1px!important;
-  }
-}
-/*// Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) and (max-width: 767px) {  
-  .header {
-    font-size: 40px;
-    text-align: center;
-  }
-  .minimalist {
-    width: 40%!important;
-  }
-  .header h5{
-    font-size: 40px;
-  }
-  .header h4 {
-    font-size: 15px;
-  }
-  body {
-    content: '';
-    width: 100%;
-    /* background: url(../images/svg3.svg); */
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-  }
-}
-/*// Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 991px) { 
-  .header {
-    font-size: 40px;
-    text-align: center;
-  }
-  .minimalist {
-    width: 40%!important;
-  }
-  .header h5{
-    font-size: 45px;
-  }
-  .header h4 {
-    font-size: 15px;
-  }
-  body {
-    content: '';
-    width: 100%;
-    /* background: url(../images/svg2.svg); */
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-  }
-}
-/*// Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) and (max-width: 1199px) {  
-  .header {
-    font-size: 40px;
-    text-align: center;
-  }
-  .paragraph {
-    font-size: 13px;
-  }
-}
-/*// Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {  
-	/* Max */
-}
