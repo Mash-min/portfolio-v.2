@@ -107,6 +107,9 @@ body {
 .personal-information-container {
     margin-top: 45px;
 }
+.information-items small, .education-items small, .work-items small {
+  font-family: 'Lexend';
+}
 .my-sidebar {
   width: 280px;
   height: 100%; 
